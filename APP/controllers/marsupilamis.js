@@ -30,7 +30,7 @@ Router.get('/marsupilamis', (req, res) => {
             res.json(marsupilami);
         }
     } else {
-        res.boom.notFound('Unable to find ');
+        res.boom.notFound('Unable to find it ');
 }
 });
 });
