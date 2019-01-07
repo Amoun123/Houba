@@ -93,7 +93,7 @@ Router.put('/marsupilamis/:id', (req, res) => {
             { new: true },
             (err, updatedMarsupilami) => {
             if (err) {
-                res.boom.badImplementation("Error occured while updating doctor");
+                res.boom.badImplementation("Error occured while updating");
             } else {
                 res.json(updatedMarsupilami);
     }
@@ -102,7 +102,7 @@ Router.put('/marsupilamis/:id', (req, res) => {
     }
     });
     } else {
-        res.boom.notFound("Unable to find doctor");
+        res.boom.notFound("Unable to find ");
 }
 });
 });
